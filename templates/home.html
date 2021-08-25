@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title%} AI Diagnoser {% endblock %}
+{%block content%}
+
+      <form action="/home" method="POST">
+          <div>
+            <label for="model_name">Select a Model: </label>
+            <select name="model_name">
+              <option value="Naive Bayes">Naive Bayes</option> 
+              <option value="K Neighbors">K Neighbors</option> 
+              <option value="Decision Tree">Decision Tree</option> 
+              <option value="Random Forest">Random Forest</option> 
+              <option value="Gradient Boost">Gradient Boost</option> 
+            </select>
+          </div>
+          <label for="symptoms">Enter Symptoms</label>
+          <div><input name="sym1" type="text" required/></div>
+          <div><input name="sym2" type="text" required/></div>
+          <div><input name="sym3" type="text" required/></div>
+          <div><input name="sym4" type="text"/></div>
+          <div><input name="sym5" type="text"/></div>
+          <div><input name="sym6" type="text"/></div>
+          <div><input type="submit" value="Submit"/></div>
+          
+      </form>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title%} AI Diagnoser {% endblock %}  
+{% block content%}
+    <p>Here comes your result</p>
+    <br>
+    <p>You could be suffering from:<b> {{params[1]}} </b> </p>
+    <br>
+    <p>The result is based on the <b>{{params[0]}}</b> model classifier</p>
+{% endblock %}
